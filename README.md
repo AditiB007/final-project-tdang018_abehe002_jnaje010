@@ -1,5 +1,4 @@
 ## Terminal Hero: Text-based RPG
- > Your author list below should include links to all members GitHub (remove existing author).
  
 Authors: 
 - Tandy Dang (https://github.com/tdang93)
