@@ -12,19 +12,16 @@ Honorary mention (author of original README.md):
 - Terminal Hero is an in-terminal text based RPG where you can create a hero to go on different quests and engage in combat with various enemies. 
 - This project is important to us as it reminds us of our beloved childhood games and now we have the opportunity to make an homage to them. 
 - We plan to develop this game in Python and will be using various tools for our project such as VSCode, Atom, and WSL2.
-- VSCode: Text editor with various extensions to add extra functionality (https://code.visualstudio.com/)
-- Atom: Text editor with various packages to enhance user experience (https://atom.io/)
-- WSL2: Windows Subsystem for Linux 2. Allows developers to be able to run Linux natively in Windows 10 (https://docs.microsoft.com/en-us/windows/wsl/install-win10)
+- * VSCode: Text editor with various extensions to add extra functionality (https://code.visualstudio.com/)
+- * Atom: Text editor with various packages to enhance user experience (https://atom.io/)
+- * WSL2: Windows Subsystem for Linux 2. Allows developers to be able to run Linux natively in Windows 10 (https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 - Our input will be:
 - * Movement (WASD/Arrow Keys)
 - * Various Actions: Attacking, Defending, Item Use (Various Keys)
 - * String Input: Character Creation, etc. (Keyboard User Input)
- > Your project description should summarize the project you are proposing. Be sure to include
- > * What are the two design patterns you will be using? For each design pattern you must explain in 4-5 sentences:
- >   * Why you picked this pattern and what feature you will implement with it
- >   * What problem you anticipate encountering when implementing your project that you will solve using the design pattern
- >   * Why the chosen design pattern will lead to a good solution to that problem
- > * This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
+- 2 Design Patterns:
+- * Composition/Aggregation: We are using this design pattern because we are going to need to put together a bunch of small parts to create a bigger result, and composition is used in almost everything in computer science. For this design pattern, structure is very important to determine the structure of elements. In terms of hierachy we will need to know which elements are parents of which children, as well as which elements need to reference other elements. We can already see that some features of the game will require composition such as the player's class consisting of different subclasses.
+- * Strategy: We are using this design pattern because we will be using inheritance to build all of our characters and their traits. It is also a good design pattern for runtime changes, which we will be making for a game with user input. In terms of problems, anything that deals with runtime changes can experience bugs and crashes. Because of this we anticipate the need to test extensively for different events and alternative class objects. The strategy pattern is a well known method to be able to solve the issue of deciding which class object to use at runtime. This will lead to a good solution for allowing that flexibility to the user. 
 
  > ## Phase II
  > In addition to completing the "Class Diagram" section below, you will need to 
