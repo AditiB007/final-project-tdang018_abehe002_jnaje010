@@ -9,11 +9,17 @@ Honorary mention (author of original README.md):
 - Jeffrey McDaniel (https://github.com/jmcda001)
 
 ## Project Description
+- Terminal Hero is an in-terminal text based RPG where you . 
+- This project is important to us as it reminds us of our beloved childhood games and now we have the opportunity to make an homage to them. 
+- We plan to develop this game in Python and will be using various tools for our project such as VSCode, Atom, and WSL2.
+- VSCode: 
+- Atom: 
+- WSL2:
+- Our input will be:
+- * Movement (WASD/Arrow Keys)
+- * Various Actions: Attacking, Defending, Item Use (Various Keys)
+- * String Input: Character Creation, etc. (Keyboard User Input)
  > Your project description should summarize the project you are proposing. Be sure to include
- > * Why is it important or interesting to you?
- > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
- >   * [toolname](link) - Short description
- > * What will be the input/output of your project?
  > * What are the two design patterns you will be using? For each design pattern you must explain in 4-5 sentences:
  >   * Why you picked this pattern and what feature you will implement with it
  >   * What problem you anticipate encountering when implementing your project that you will solve using the design pattern
