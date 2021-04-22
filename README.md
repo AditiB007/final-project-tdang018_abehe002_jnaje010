@@ -9,12 +9,12 @@ Honorary mention (author of original README.md):
 - Jeffrey McDaniel (https://github.com/jmcda001)
 
 ## Project Description
-- Terminal Hero is an in-terminal text based RPG where you . 
+- Terminal Hero is an in-terminal text based RPG where you can create a hero to go on different quests and engage in combat with various enemies. 
 - This project is important to us as it reminds us of our beloved childhood games and now we have the opportunity to make an homage to them. 
 - We plan to develop this game in Python and will be using various tools for our project such as VSCode, Atom, and WSL2.
-- VSCode: 
-- Atom: 
-- WSL2:
+- VSCode: Text editor with various extensions to add extra functionality (https://code.visualstudio.com/)
+- Atom: Text editor with various packages to enhance user experience (https://atom.io/)
+- WSL2: Windows Subsystem for Linux 2. Allows developers to be able to run Linux natively in Windows 10 (https://docs.microsoft.com/en-us/windows/wsl/install-win10)
 - Our input will be:
 - * Movement (WASD/Arrow Keys)
 - * Various Actions: Attacking, Defending, Item Use (Various Keys)
