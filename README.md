@@ -19,10 +19,10 @@ Honorary mention (author of original README.md):
   * Movement (WASD/Arrow Keys)
   * Various Actions: Attacking, Defending, Item Use (Various Keys)
   * String Input: Character Creation, etc. (Keyboard User Input)
-* 1st Design Pattern: Composition/Aggregation
-  * We are using this design pattern because we are going to need to put together a bunch of small parts to create a bigger result, and composition is used in almost everything in computer science.
-  * For this design pattern, structure is very important to determine the structure of elements. In terms of hierachy, we will need to know which elements are parents of which children, as well as which elements need to reference other elements. This organizational overhead is a problem that can be solved by correctly composing with Composite and Aggregation.
-  * We can already see that some features of the game will require composition such as the player's class consisting of different subclasses.
+* 1st Design Pattern: Composite
+  * We are using this design pattern because we need to put together smaller components to create a bigger one, while maitaining similar behavior at all levels of composition. The feature we plan to implement with this is a challenging enemy: the Slime. The Slime will split up into smaller slimes when defeated, until its smallest "leaf node" slime children are defeated. In this way, Composite will support a uniform operation with the enemy behavior (parent or child Slime).
+  * For this design pattern, structure is very important to determine the structure of elements. In terms of hierachy, we will need to know which elements are parents of which children, as well as which elements need to reference other elements. This organizational overhead is a problem that can be solved by correctly composing with Composite. We will need to correctly implement the parent and child Slimes with recursive composition, or else it will not work correctly.
+  * A slime enemy is a good representation of a composite container class which can contains more composite objects and primitive objects inside of it. This adheres to the same relationship.
 * 2nd Design Pattern: Strategy
   * We are using this design pattern because we will be using inheritance to build all of our characters and their traits. It is also a good design pattern for runtime changes, which we will be making for a game with user input. 
   * In terms of problems, anything that deals with runtime changes can experience bugs and crashes. Because of this, we anticipate the need to test extensively for different events and alternative class objects. By having a Strategy be responsible for this, we can address the range of testing by unit testing each class that is used. It will also properly handle those changes dynamically so that as developers, we do not commit hardcoded mistakes with pointers.
