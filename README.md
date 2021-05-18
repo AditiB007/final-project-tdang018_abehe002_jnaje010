@@ -33,7 +33,8 @@ Honorary mention (author of original README.md):
   * The factory design pattern standardizes how to instantiate objects of particular classes, so it is a good choice for ensuring that enemies are not created incorrectly. This will manage object creation for us dynamically, to address the issue of memory allocation.
 
 ## Class Diagram
-This OMT diagram is included in the repository as a PNG image.
+!(https://github.com/cs100/final-project-tdang018_abehe002_jnaje010/blob/main/CS100_OMT-Diagram.png?raw=true)
+Note: This OMT diagram is included in the repository as a PNG image.
  
  > ## Phase III
  > You will need to schedule a check-in with the TA (during lab hours or office hours). Your entire team must be present. 
