@@ -1,9 +1,10 @@
 #iEntity.py
 
-class iEntity(object):
+from abc import ABC
+
+class iEntity(ABC):
   #data
   name = None
-  en_type = None
   power = None
   health = None
   level = 1
@@ -11,31 +12,10 @@ class iEntity(object):
   xp_cap = 25
 
   #constructor
-  def __init__(self, id, et):
+  def __init__(self, id):
     self.name = id
-    self.en_type = et
-    
-    #fill in specifics for each class
 
   #class functions
-  def getName(self):
-    return name
-
-  def getType(self):
-    return en_type
-
-  def getPower(self):
-   return power
-
-  def getHealth(self):
-    return health
-
-  def getLevel(self):
-    return level
-
-  def getXp(self):
-    return xp
-
   def setName(self, id):
     self.name = id
 
@@ -48,6 +28,29 @@ class iEntity(object):
   def setXp(self, xpPar):
     self.xp = xpPar
 
-  def useSkill() = 0
+  @abstractmethod
+  def useSkill():
+    pass
 
-  def attack() = 0 
+  @abstractmethod
+  def attack():
+    pass 
+
+  def isAlive(self):
+    if self.hp > 0:
+      return True
+    else:
+      return False
+
+  def levelUp(self):
+    if slef.curr_xp > self.xp_cap:
+      self.curr_xp = 0
+      self.xp_cap += 25
+      self.level += 1
+
+  def gainXp(self, xp):
+    self.curr_xp += xp
+
+  def takeDamage(self, damage):
+    self.health -= damage
+
