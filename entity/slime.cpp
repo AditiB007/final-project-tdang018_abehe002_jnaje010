@@ -6,14 +6,15 @@ Slime::Slime() : IEnemy() {
   this->number = 0;
 }
 
-Slime::(const string &n, int pow, int hp, int lvl, int exp, int num) : IEnemy("Slime", pow, hp, lvl, exp) {
+Slime::(const string &n, int pow, int hp, int lvl, int exp, int num) : IEnemy(n, pow, hp, lvl, exp) {
   this->number = num;
 }
 
 int Slime::useSkill() {
+  int damage = getPower() * getLevel() * 1.5;
   cout << "Slime used Bounce!" << endl;
-  cout << "It did " << getPower() * getLevel() * 1.5 << "damage!" << endl;
-  return getPower() * getLevel() * 1.5;
+  cout << "It did " << damage << " damage!" << endl;
+  return damage;
 }
 
 int Slime:: attack() {
