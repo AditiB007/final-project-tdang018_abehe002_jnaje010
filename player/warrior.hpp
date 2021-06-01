@@ -9,7 +9,7 @@ class Warrior : public IPlayer {
   public:
     Warrior();
     Warrior(const string &n, int pow, int hp,
-            int lvl, int exp, IArmor* arm, IWeapon* weap, IEquipFactory* fac);
+            int lvl, int exp);
     int attack();
     int useSkill();
 };

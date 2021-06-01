@@ -5,8 +5,8 @@ using namespace std;
 Warrior::Warrior() : IPlayer() {}
 
 Warrior::Warrior(const string &n, int pow, int hp,
-     int lvl, int exp, IArmor* arm, IWeapon* weap, IEquipFactory* fac) :
-     IPlayer("Warrior", n, pow, hp, lvl, exp, arm, weap) {}
+     int lvl, int exp) :
+     IPlayer(n, pow, hp, lvl, exp) {}
 
 int Warrior::attack() {
   cout << getName() << " used their " << this->weapon->getName() <<

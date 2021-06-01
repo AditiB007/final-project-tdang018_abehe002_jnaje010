@@ -9,10 +9,10 @@ IPlayer::IPlayer() : IEntity () {
 }
 
 IPlayer::IPlayer(const string &n, int pow, int hp,
-                 int lvl, int exp, IArmor* arm, IWeapon* weap)
+                 int lvl, int exp)
                  : IEntity(n, pow, hp, lvl, exp) {
-  this->armor = arm;
-  this->weapon = weap;
+  this->armor = nullptr;
+  this->weapon = nullptr;
 //  this->factory = fac;
 }
 
@@ -21,14 +21,14 @@ void IPlayer::run() {
 }
 
 void IPlayer::equipArmor(IArmor* arm) {
-  if(this->armor) {
+  if(this->armor != nullptr) {
     delete this->armor;
   }
   this->armor = arm;
 }
 
 void IPlayer::equipWeapon(IWeapon* weap) {
-  if(this->weapon) {
+  if(this->weapon != nullptr) {
     delete this->weapon;
   }
   this->weapon = weap;
