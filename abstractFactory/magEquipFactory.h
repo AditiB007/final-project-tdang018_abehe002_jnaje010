@@ -2,9 +2,8 @@
 #define __MAGEQUIPFACTORY_H__
 
 #include "iEquipFactory.h"
-//#include "../player/iPlayer.hpp"
 
-class MagEquipFactory {
+class MagEquipFactory : public IEquipFactory {
 private:
 
 protected:
