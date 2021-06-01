@@ -1,0 +1,24 @@
+#include "mage.hpp"
+
+using namespace std;
+
+Mage::Mage() : IPlayer() {}
+
+Mage::Mage(const string &n, int pow, int hp,
+     int lvl, int exp, IArmor* arm, IWeapon* weap, IEquipFactory* fac) :
+     IPlayer("Mage", n, pow, hp, lvl, exp, arm, weap) {}
+
+int Mage::attack() {
+  cout << getName() << " used their " << this->weapon->getName() <<
+  "to do Staff Club!" << endl;
+
+  cout << "It did " << this->weapon->getAttack() + getPower() << " damage!" << endl;
+  return this->weapon->getAttack() + getPower();
+}
+
+int Mage::useSkill() {
+  cout << getName() << " used Fireball!" << endl;
+  cout << "It did " << getPower() * getLevel() * 1.5 << "damage!" << endl;
+  return getPower() * getLevel() * 1.5;
+}
+
