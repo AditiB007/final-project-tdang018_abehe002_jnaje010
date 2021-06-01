@@ -55,7 +55,7 @@ Note: This OMT diagram is included in the repository as a PNG image.
  ## Screenshots
  > Screenshots of the input/output after running your application
  ## Installation/Usage
- > Instructions on installing and running your application
+ - Download all of the files off GitHub by using "git clone --recursive https://github.com/cs100/final-project-tdang018_abehe002_jnaje010.git" (without the ""). Then run it using this command " " (without the "").
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  

@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Rat : public iEnemy {
+class Rat : public IEnemy {
   private:
 
   public:

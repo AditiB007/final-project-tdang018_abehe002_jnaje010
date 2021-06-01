@@ -15,9 +15,10 @@ Gobin::Goblin(const string &n, int pow, int hp,
 }
 
 int Goblin::useSkill() {
+  int damage = getPower() * getLevel() * 1.5;
   cout << "Goblin used Fury Slash!" << endl;
-  cout << "It did " << getPower() * getLevel() * 1.5 << "damage!" << endl;
-  return getPower() * getLevel() * 1.5;
+  cout << "It did " << damage << " damage!" << endl;
+  return damage;
 }
 
 int Goblin::attack() {

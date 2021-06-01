@@ -17,8 +17,9 @@ int Rogue::attack() {
 }
 
 int Rogue::useSkill() {
+  int damage = getPower() * getLevel() * 1.5;
   cout << getName() << " used Quickdraw!" << endl;
-  cout << "It did " << getPower() * getLevel() * 1.5 << "damage!" << endl;
-  return getPower() * getLevel() * 1.5;
+  cout << "It did " << damage << " damage!" << endl;
+  return damage;
 }
 
