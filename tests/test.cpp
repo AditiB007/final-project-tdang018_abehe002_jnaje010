@@ -3,6 +3,7 @@
 #include "rogEquipFactory_test.h"
 #include "rat_test.hpp"
 #include "slime_test.hpp"
+#include "goblin_test.hpp"
 
 #include "gtest/gtest.h"
 
