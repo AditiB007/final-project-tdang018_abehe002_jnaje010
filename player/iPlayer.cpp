@@ -5,15 +5,15 @@ using namespace std;
 IPlayer::IPlayer() : IEntity () {
   this->armor = nullptr;
   this->weapon = nullptr;
-  this->factory = nullptr;
+//  this->factory = nullptr;
 }
 
 IPlayer::IPlayer(const string &n, int pow, int hp,
-                 int lvl, int exp, IArmor* arm, IWeapon* weap, IEquipFactory* fac)
+                 int lvl, int exp, IArmor* arm, IWeapon* weap)
                  : IEntity(n, pow, hp, lvl, exp) {
   this->armor = arm;
   this->weapon = weap;
-  this->factory = fac;
+//  this->factory = fac;
 }
 
 void IPlayer::run() {

@@ -8,6 +8,7 @@ ADD_EXECUTABLE(test ./tests/test.cpp
 ./abstractFactory/iEquipFactory.cpp
 	./abstractFactory/warEquipFactory.cpp
 	./abstractFactory/magEquipFactory.cpp
+	./abstractFactory/rogEquipFactory.cpp
 
 ./abstractFactory/iEquipment.cpp
 	./abstractFactory/iArmor.cpp
@@ -19,8 +20,11 @@ ADD_EXECUTABLE(test ./tests/test.cpp
 		./abstractFactory/staff.cpp
 		./abstractFactory/dagger.cpp
 
-./abstractFactory/iEntity.cpp
-	./abstractFactory/iPlayer.cpp
+./entity/iEntity.cpp
+	./player/iPlayer.cpp
+	./entity/iEnemy.cpp
+		./entity/rat.cpp
+		
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

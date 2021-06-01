@@ -1,18 +1,17 @@
-#ifndef __MAGEQUIPFACTORY_H__
-#define __MAGEQUIPFACTORY_H__
+#ifndef __ROGEQUIPFACTORY_H__
+#define __ROGEQUIPFACTORY_H__
 
 #include "iEquipFactory.h"
 //#include "../player/iPlayer.hpp"
 
-class MagEquipFactory {
+class RogEquipFactory : public IEquipFactory {
 private:
 
 protected:
 
 public:
-	MagEquipFactory();
+	RogEquipFactory();
 	void makeEquipment(IPlayer*);
 };
 
 #endif
-
