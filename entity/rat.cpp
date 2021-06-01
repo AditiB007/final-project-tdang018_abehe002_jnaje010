@@ -4,16 +4,18 @@ using namespace std;
 
 Rat::Rat() : IEnemy() {}
 
-Rat::Rat(const string &n, int pow, int hp, int lvl, int exp) : IEnemy("Rat", pow, hp, lvl, exp) {}
+Rat::Rat(const string &n, int pow, int hp, int lvl, int exp) : IEnemy(n, pow, hp, lvl, exp) {}
 
 int Rat::useSkill() {
+  int damage = getPower() * getLevel() * 1.5;
   cout << "Rat used Hyper Fang!" << endl;
-  cout << "It did " << getPower() * getLevel() * 1.5 << "damage!" << endl;
-  return getPower() * getLevel() * 1.5;
+  cout << "It did " << damage  << " damage!" << endl;
+  return damage;
 }
 
 int Rat:: attack() {
+  int damage = getPower() * getLevel();
   cout << "Rat used Scratch!" << endl;
-  cout << "It did " << getPower() * getLevel() << "damage!" << endl;
-  return getPower() * getLevel();
+  cout << "It did " << damage << " damage!" << endl;
+  return damage;
 }

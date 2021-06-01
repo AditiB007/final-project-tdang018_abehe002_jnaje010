@@ -2,6 +2,7 @@
 #define __IENTITY_HPP__
 
 #include <string>
+#include <iostream>
 
 using namespace std;
 
@@ -31,6 +32,7 @@ class IEntity {
     void setPower(int pow);
     void setHealth(int hp);
     void setExperience(int exp);
+    void setLevel(int lvl);
 
     //Actions
     bool isAlive();

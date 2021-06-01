@@ -1,4 +1,5 @@
 #include "warEquipFactory_test.h"
+#include "rat_test.hpp"
 
 #include "gtest/gtest.h"
 
