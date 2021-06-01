@@ -2,8 +2,7 @@
 #define __IEQUIPFACTORY_H__
 
 #include "iEquipFactory.h"
-//#include "../baseClasses/iEntity.h"
-#include "../abstractFactory/iPlayer.hpp"
+#include "../player/iPlayer.hpp"
 
 class IEquipFactory {
 private:

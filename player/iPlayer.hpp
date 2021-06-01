@@ -1,9 +1,12 @@
 #ifndef __IPLAYER_HPP__
 #define __IPLAYER_HPP__
 
-using namespace std;
-
 #include "../entity/iEntity.hpp"
+#include "../abstractFactory/iArmor.h"
+#include "../abstractFactory/iWeapon.h"
+//#include "../abstractFactory/iEquipFactory.h"
+
+#include <iostream>
 
 using namespace std;
 
@@ -11,12 +14,12 @@ class IPlayer : public IEntity {
   private:
     IArmor* armor;
     IWeapon* weapon;
-    IEquipFactory* factory;
+//    IEquipFactory* factory;
 
   public:
     IPlayer();
     IPlayer(const string &n, int pow, int hp,
-            int lvl, int exp, IArmor* arm, IWeapon* weap, IEquipFactory* fac);
+            int lvl, int exp, IArmor* arm, IWeapon* weap);
     void run();
     void equipArmor(IArmor* arm);
     void equipWeapon(IWeapon* weap);

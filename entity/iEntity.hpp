@@ -31,6 +31,7 @@ class IEntity {
     void setPower(int pow);
     void setHealth(int hp);
     void setExperience(int exp);
+    void setLevel(int lvl);
 
     //Actions
     bool isAlive();

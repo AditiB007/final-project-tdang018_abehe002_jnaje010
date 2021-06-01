@@ -2,7 +2,7 @@
 #define __MAGEQUIPFACTORY_H__
 
 #include "iEquipFactory.h"
-#include "iPlayer.hpp"
+//#include "../player/iPlayer.hpp"
 
 class MagEquipFactory {
 private:

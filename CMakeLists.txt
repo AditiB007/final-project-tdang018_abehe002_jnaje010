@@ -19,8 +19,8 @@ ADD_EXECUTABLE(test ./tests/test.cpp
 		./abstractFactory/staff.cpp
 		./abstractFactory/dagger.cpp
 
-./abstractFactory/iEntity.cpp
-	./abstractFactory/iPlayer.cpp
+./entity/iEntity.cpp
+	./player/iPlayer.cpp
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
