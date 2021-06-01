@@ -3,7 +3,7 @@
 
 #include "iEquipFactory.h"
 
-class WarEquipFactory {
+class WarEquipFactory : public IEquipFactory {
 private:
 	
 public:

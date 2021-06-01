@@ -2,7 +2,6 @@
 #define __ROGEQUIPFACTORY_H__
 
 #include "iEquipFactory.h"
-//#include "../player/iPlayer.hpp"
 
 class RogEquipFactory : public IEquipFactory {
 private:

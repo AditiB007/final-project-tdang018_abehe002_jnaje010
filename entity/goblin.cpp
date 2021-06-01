@@ -7,7 +7,7 @@ Goblin::Goblin() : IEnemy() {
   this->weapon = nullptr;
 }
 
-Gobin::Goblin(const string &n, int pow, int hp,
+Goblin::Goblin(const string &n, int pow, int hp,
               int lvl, int exp, IArmor* arm, IWeapon* weap)
               : IEnemy(n, pow, hp, lvl, exp) {
   this->armor = arm;
