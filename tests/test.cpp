@@ -1,5 +1,6 @@
 #include "warEquipFactory_test.h"
 #include "magEquipFactory_test.h"
+#include "rogEquipFactory_test.h"
 
 #include "gtest/gtest.h"
 
