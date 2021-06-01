@@ -8,7 +8,7 @@ using namespace std;
 
 class Slime : public IEnemy {
   private:
-    vector<Slime*> slimes;
+    vector<Slime> slimes;
     int number;
 
   public:

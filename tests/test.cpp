@@ -2,6 +2,7 @@
 #include "magEquipFactory_test.h"
 #include "rogEquipFactory_test.h"
 #include "rat_test.hpp"
+#include "slime_test.hpp"
 
 #include "gtest/gtest.h"
 
