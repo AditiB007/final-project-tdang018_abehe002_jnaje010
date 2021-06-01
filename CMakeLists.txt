@@ -27,8 +27,8 @@ ADD_EXECUTABLE(test ./tests/test.cpp
 		./player/rogue.cpp
 	./entity/iEnemy.cpp
 		./entity/rat.cpp
+		./entity/slime.cpp	
 
-		
 )
 
 TARGET_LINK_LIBRARIES(test gtest)
