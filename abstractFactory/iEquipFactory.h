@@ -3,15 +3,16 @@
 
 #include "iEquipFactory.h"
 //#include "../baseClasses/iEntity.h"
-#include "../abstractFactory/iEntity.hpp"
+#include "../abstractFactory/iPlayer.hpp"
 
 class IEquipFactory {
 private:
-	
+
+protected:	
 
 public:
 	IEquipFactory();
-	virtual void makeEquipment(IEntity*) = 0;
+	virtual void makeEquipment(IPlayer*) = 0;
 };
 
 #endif

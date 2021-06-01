@@ -1,14 +1,14 @@
-#include "iEquipFactory.h"
-
 #ifndef __WAREQUIPFACTORY_H__
 #define __WAREQUIPFACTORY_H__
+
+#include "iEquipFactory.h"
 
 class WarEquipFactory {
 private:
 	
 public:
 	WarEquipFactory();
-	void makeEquipment(IEntity*);
+	void makeEquipment(IPlayer*);
 };
 
 #endif
