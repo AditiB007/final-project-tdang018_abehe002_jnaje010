@@ -38,7 +38,7 @@ Honorary mention (author of original README.md):
 Note: This OMT diagram is included in the repository as a PNG image.
 
  ## Screenshots
- > Screenshots of the input/output after running your application
+ ![](https://github.com/cs100/final-project-tdang018_abehe002_jnaje010/blob/master/game.png)
  ## Installation/Usage
  - Download all of the files off GitHub by using "git clone --recursive https://github.com/cs100/final-project-tdang018_abehe002_jnaje010.git" (without the ""). Then run it using this command "cmake3 .", then "make", then "./game" (without the ""). Once you start the game, you will be asked for user inputs from your keyboard throughout the game, those instructions are included in the game itself.
  ## Testing
