@@ -9,7 +9,7 @@ class Rogue : public IPlayer {
   public:
     Rogue();
     Rogue(const string &n, int pow, int hp,
-            int lvl, int exp, IArmor* arm, IWeapon* weap, IEquipFactory* fac);
+            int lvl, int exp);
     int attack();
     int useSkill();
 };

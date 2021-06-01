@@ -5,8 +5,8 @@ using namespace std;
 Rogue::Rogue() : IPlayer() {}
 
 Rogue::Rogue(const string &n, int pow, int hp,
-            int lvl, int exp, IArmor* arm, IWeapon* weap, IEquipFactory* fac) :
-            IPlayer("Rogue", n, pow, hp, lvl, exp, arm, weap) {}
+            int lvl, int exp) :
+            IPlayer(n, pow, hp, lvl, exp) {}
 
 int Rogue::attack() {
   cout << getName() << " used their " << this->weapon->getName() <<

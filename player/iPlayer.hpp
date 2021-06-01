@@ -11,15 +11,15 @@
 using namespace std;
 
 class IPlayer : public IEntity {
-  private:
+  public:
     IArmor* armor;
     IWeapon* weapon;
 //    IEquipFactory* factory;
 
-  public:
+//  public:
     IPlayer();
     IPlayer(const string &n, int pow, int hp,
-            int lvl, int exp, IArmor* arm, IWeapon* weap);
+            int lvl, int exp);
     void run();
     void equipArmor(IArmor* arm);
     void equipWeapon(IWeapon* weap);

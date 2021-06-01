@@ -22,9 +22,13 @@ ADD_EXECUTABLE(test ./tests/test.cpp
 
 ./entity/iEntity.cpp
 	./player/iPlayer.cpp
+		./player/warrior.cpp
+		./player/mage.cpp
+		./player/rogue.cpp
 	./entity/iEnemy.cpp
 		./entity/rat.cpp
 		./entity/slime.cpp	
+
 )
 
 TARGET_LINK_LIBRARIES(test gtest)

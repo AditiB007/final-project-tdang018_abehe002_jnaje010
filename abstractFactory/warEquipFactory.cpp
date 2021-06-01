@@ -7,9 +7,9 @@ WarEquipFactory::WarEquipFactory(){
 }
 
 void WarEquipFactory::makeEquipment(IPlayer* player){
-	//if(player->weapon){delete player->weapon;}
-	player->equipWeapon(new Sword());
+	Sword* sword = new Sword();
+	player->equipWeapon(sword);
 
-	//if(player->armor){delete player->armor;}
-	player->equipArmor(new Chainmail());
+	Chainmail* chainmail = new Chainmail();
+	player->equipArmor(chainmail);
 }
